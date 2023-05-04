@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Appenders>
+    <Console name="console" target="SYSTEM_OUT">
+        <PatternLayout>
+            <pattern>
+                [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} %d (%r) [%t] [%x] %-5p %c - %m%n
+            </pattern>
+        </PatternLayout>
+    </Console>
+</Appenders>
