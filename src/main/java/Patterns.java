@@ -1,3 +1,7 @@
+import com.ijaaz.patterns.creational.abs.factory.AbstractFactory;
+import com.ijaaz.patterns.creational.abs.factory.Bank;
+import com.ijaaz.patterns.creational.abs.factory.FactoryCreator;
+import com.ijaaz.patterns.creational.abs.factory.Loan;
 import com.ijaaz.patterns.creational.factory.Plan;
 import com.ijaaz.patterns.creational.factory.PlanFactory;
 import org.apache.logging.log4j.LogManager;
@@ -19,6 +23,18 @@ public class Patterns {
                     plan.calculateBill();
                     break;
 
+                case "ABSTRACT_FACTORY_PATTERN":
+
+                    logger.info("Creational patterns: This will focus on " + args[1]);
+                    AbstractFactory bankFactory = FactoryCreator.getFactory("Bank");
+                    Bank bank = bankFactory.getBank(args[2]);
+
+                    logger.info("You are taking a loan from: " + bank.getBankName());
+                    AbstractFactory loanFactory = FactoryCreator.getFactory("Loan");
+                    Loan loan = loanFactory.getLoan(args[3]);
+                    loan.getInterestRate(12.0);
+                    loan.calculateLoanPayment(Double.parseDouble(args[4]),Integer.parseInt(args[5]));
+                    break;
             }
         }
     }
