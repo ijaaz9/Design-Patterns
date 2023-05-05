@@ -4,6 +4,7 @@ import com.ijaaz.patterns.creational.factory.kit.FactoryCreator;
 import com.ijaaz.patterns.creational.factory.kit.concepts.Loan;
 import com.ijaaz.patterns.creational.factory.Plan;
 import com.ijaaz.patterns.creational.factory.PlanFactory;
+import com.ijaaz.patterns.creational.prototype.impl.EmployeeRecord;
 import com.ijaaz.patterns.creational.singleton.Singleton;
 import com.ijaaz.patterns.creational.singleton.SingletonThreadsafe;
 import org.apache.logging.log4j.LogManager;
@@ -67,6 +68,19 @@ public class Patterns {
                     threadA.start();
                     threadB.start();
                     break;
+
+                case "PROTOTYPE":
+                    logger.info("Creational patterns: This will focus on " + args[1]);
+                    logger.info("Instantiating initial employee record");
+                    EmployeeRecord e1 = new EmployeeRecord(Integer.parseInt(args[2]),args[3],args[4],Double.parseDouble(args[5]),args[6]);
+                    logger.info("Initial employee record");
+                    e1.showRecord();
+                    logger.info("Cloning existing e1 object...");
+                    EmployeeRecord e2 = (EmployeeRecord) e1.getClone();
+                    logger.info("Cloned employee record");
+                    e2.showRecord();
+
+
 
             }
         }
