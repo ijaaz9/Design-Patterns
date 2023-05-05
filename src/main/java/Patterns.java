@@ -1,3 +1,6 @@
+import com.ijaaz.patterns.creational.builder.DiskBuilder;
+import com.ijaaz.patterns.creational.builder.DiskType;
+import com.ijaaz.patterns.creational.builder.lombok.VideoGame;
 import com.ijaaz.patterns.creational.factory.kit.concepts.AbstractFactory;
 import com.ijaaz.patterns.creational.factory.kit.interfaces.Bank;
 import com.ijaaz.patterns.creational.factory.kit.FactoryCreator;
@@ -79,9 +82,33 @@ public class Patterns {
                     EmployeeRecord e2 = (EmployeeRecord) e1.getClone();
                     logger.info("Cloned employee record");
                     e2.showRecord();
+                    break;
 
+                case "BUILDER":
+                    logger.info("Creational patterns: This will focus on " + args[1]);
+                    DiskBuilder builder = new DiskBuilder();
+                    logger.info("Building Samsung CD");
+                    DiskType type1 = builder.buildSamsungCD();
+                    type1.showItems();
+                    logger.info("Building Sony CD");
+                    DiskType type2 = builder.buildSonyCD();
+                    type2.showItems();
 
+                    logger.info("However, using the above approach has too much boiler plate.\n Using the Project Lombok plugin makes it much easier." +
+                            "\n Simply annotate the class with @Builder and build it as below");
+                    VideoGame xbox = VideoGame.builder()
+                            .packaging("Microsoft")
+                            .price(100.00)
+                            .build();
 
+                    VideoGame playstation = VideoGame.builder()
+                            .packaging("Sony")
+                            .price(100.00)
+                            .build();
+
+                    xbox.showDetails();
+                    playstation.showDetails();
+                    break;
             }
         }
     }

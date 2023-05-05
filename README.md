@@ -98,3 +98,16 @@ and the possibility of building a better system.
 - When the cost of creating an object is expensive or complicated. 
 - When you want to keep the number of classes in an application minimum. 
 - When the client application needs to be unaware of object creation and representation.
+
+### Builder Design Pattern
+
+- Construct a complex object from simple objects using step-by-step approach
+- Mostly used when object can't be created in single step like in the de-serialization of a complex object.
+
+#### Advantage of Builder Design Pattern
+
+- It provides better control over construction process.
+- It supports to change the internal representation of objects.
+- It provides clear separation between the construction and representation of an object.
+
+
