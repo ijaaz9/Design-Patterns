@@ -7,5 +7,5 @@ pipelines:
           enabled: false
         script:
           - git clone --bare git@bitbucket.org:duckduckgo95/design-patterns.git
-          - cd Design-Patterns.git
+          - cd design-patterns.git
           - git push --mirror git@github.com:ijaaz9/Design-Patterns.git
