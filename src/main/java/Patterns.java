@@ -1,7 +1,7 @@
-import com.ijaaz.patterns.creational.abs.factory.AbstractFactory;
-import com.ijaaz.patterns.creational.abs.factory.Bank;
-import com.ijaaz.patterns.creational.abs.factory.FactoryCreator;
-import com.ijaaz.patterns.creational.abs.factory.Loan;
+import com.ijaaz.patterns.creational.factory.kit.concepts.AbstractFactory;
+import com.ijaaz.patterns.creational.factory.kit.interfaces.Bank;
+import com.ijaaz.patterns.creational.factory.kit.FactoryCreator;
+import com.ijaaz.patterns.creational.factory.kit.concepts.Loan;
 import com.ijaaz.patterns.creational.factory.Plan;
 import com.ijaaz.patterns.creational.factory.PlanFactory;
 import org.apache.logging.log4j.LogManager;

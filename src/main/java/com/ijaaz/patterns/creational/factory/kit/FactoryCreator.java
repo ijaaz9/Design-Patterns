@@ -1,4 +1,6 @@
-package com.ijaaz.patterns.creational.abs.factory;
+package com.ijaaz.patterns.creational.factory.kit;
+
+import com.ijaaz.patterns.creational.factory.kit.concepts.AbstractFactory;
 
 public class FactoryCreator {
 

@@ -1,4 +1,6 @@
-package com.ijaaz.patterns.creational.abs.factory;
+package com.ijaaz.patterns.creational.factory.kit.impl;
+
+import com.ijaaz.patterns.creational.factory.kit.interfaces.Bank;
 
 public class HDFC implements Bank {
 

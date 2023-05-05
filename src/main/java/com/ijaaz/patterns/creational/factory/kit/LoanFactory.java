@@ -1,6 +1,10 @@
-package com.ijaaz.patterns.creational.abs.factory;
+package com.ijaaz.patterns.creational.factory.kit;
 
-public class LoanFactory extends AbstractFactory{
+import com.ijaaz.patterns.creational.factory.kit.concepts.AbstractFactory;
+import com.ijaaz.patterns.creational.factory.kit.concepts.Loan;
+import com.ijaaz.patterns.creational.factory.kit.interfaces.Bank;
+
+public class LoanFactory extends AbstractFactory {
     @Override
     public Bank getBank(String bank) {
         return null;

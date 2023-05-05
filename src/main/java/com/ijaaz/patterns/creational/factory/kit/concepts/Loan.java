@@ -1,4 +1,4 @@
-package com.ijaaz.patterns.creational.abs.factory;
+package com.ijaaz.patterns.creational.factory.kit.concepts;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

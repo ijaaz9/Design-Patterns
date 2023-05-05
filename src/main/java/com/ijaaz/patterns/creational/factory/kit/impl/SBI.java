@@ -1,6 +1,8 @@
-package com.ijaaz.patterns.creational.abs.factory;
+package com.ijaaz.patterns.creational.factory.kit.impl;
 
-public class SBI implements Bank{
+import com.ijaaz.patterns.creational.factory.kit.interfaces.Bank;
+
+public class SBI implements Bank {
 
     private String bankName;
 
