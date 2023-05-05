@@ -1,9 +1,7 @@
 
 # Design Patterns
 
-The reason for this project is simply to get back to basics. 
-I know what you might be thinking. "Why would an experienced engineer include this in their portfolio?" While I admit 
-I am expected to know these patterns, it never hurts to go back to basics and re-learn things especially after years of 
+The reason for this project is simply to get back to basics. It never hurts to go back to basics and re-learn things especially after years of 
 not using these design approaches.
 
 ## Advantages of design patterns
